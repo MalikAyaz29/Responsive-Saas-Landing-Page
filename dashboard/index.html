@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusOps | Enterprise Admin Dashboard</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="dashboard-container">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-shapes"></i></div>
+                    <h2>NexusOps</h2>
+                </div>
+                <button class="mobile-close" id="sidebar-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <p class="nav-section">Dashboard</p>
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-chart-pie"></i> Overview
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-chart-line"></i> Analytics
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-wallet"></i> Finance
+                    <span class="badge">New</span>
+                </a>
+                
+                <p class="nav-section mt-1">Management</p>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-users"></i> Customers
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-box-open"></i> Products
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-clipboard-list"></i> Orders
+                </a>
+                
+                <p class="nav-section mt-1">Settings</p>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-gear"></i> Preferences
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-shield-halved"></i> Security
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="upgrade-card">
+                    <div class="icon-circle"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Upgrade to Pro</h4>
+                    <p>Get advanced analytics features</p>
+                    <button class="btn btn-primary btn-sm">Upgrade</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Top Header -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle"><i class="fa-solid fa-bars"></i></button>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search transactions, customers...">
+                    </div>
+                </div>
+                
+                <div class="topbar-right">
+                    <button class="icon-btn" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <div class="user-profile">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop" alt="User" class="avatar">
+                        <div class="user-info">
+                            <span class="user-name">Alex Morgan</span>
+                            <span class="user-role">Super Admin</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-muted text-sm"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <div>
+                        <h1>Dashboard Overview</h1>
+                        <p class="text-muted">Welcome back, Alex! Here's what's happening today.</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-outline"><i class="fa-solid fa-download"></i> Export</button>
+                        <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Report</button>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div>
+                                <p class="stat-title">Total Revenue</p>
+                                <h3 class="stat-value">$124,563.00</h3>
+                            </div>
+                            <div class="stat-icon bg-primary-light text-primary">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </div>
+                        </div>
+                        <div class="stat-footer">
+                            <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 14.5%</span>
+                            <span class="text-muted"> vs last month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div>
+                                <p class="stat-title">Active Customers</p>
+                                <h3 class="stat-value">8,234</h3>
+                            </div>
+                            <div class="stat-icon bg-success-light text-success">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="stat-footer">
+                            <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 5.2%</span>
+                            <span class="text-muted"> vs last month</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div>
+                                <p class="stat-title">Total Orders</p>
+                                <h3 class="stat-value">1,423</h3>
+                            </div>
+                            <div class="stat-icon bg-warning-light text-warning">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                        </div>
+                        <div class="stat-footer">
+                            <span class="trend down"><i class="fa-solid fa-arrow-down"></i> 2.1%</span>
+                            <span class="text-muted"> vs last month</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div>
+                                <p class="stat-title">Conversion Rate</p>
+                                <h3 class="stat-value">4.83%</h3>
+                            </div>
+                            <div class="stat-icon bg-danger-light text-danger">
+                                <i class="fa-solid fa-chart-pie"></i>
+                            </div>
+                        </div>
+                        <div class="stat-footer">
+                            <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 1.2%</span>
+                            <span class="text-muted"> vs last month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="charts-grid">
+                    <div class="card chart-card large">
+                        <div class="card-header">
+                            <h3 class="card-title">Revenue Analytics</h3>
+                            <select class="filter-select">
+                                <option>This Year</option>
+                                <option>Last Year</option>
+                            </select>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="card chart-card small">
+                        <div class="card-header">
+                            <h3 class="card-title">Sales by Source</h3>
+                            <button class="icon-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                        <div class="card-body doughnut-container">
+                            <canvas id="sourceChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Transactions Table -->
+                <div class="card table-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Recent Transactions</h3>
+                        <a href="#" class="btn btn-outline btn-sm">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Transaction ID</th>
+                                    <th>Customer</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#TRX-8472</td>
+                                    <td>
+                                        <div class="table-user">
+                                            <div class="avatar-sm bg-primary-light text-primary">SC</div>
+                                            <span>Sarah Connor</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-muted">Oct 24, 2026</td>
+                                    <td class="font-medium">$1,245.00</td>
+                                    <td><span class="status-badge success">Completed</span></td>
+                                    <td><button class="icon-btn"><i class="fa-solid fa-ellipsis"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>#TRX-8471</td>
+                                    <td>
+                                        <div class="table-user">
+                                            <div class="avatar-sm bg-warning-light text-warning">JD</div>
+                                            <span>John Doe</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-muted">Oct 24, 2026</td>
+                                    <td class="font-medium">$349.99</td>
+                                    <td><span class="status-badge pending">Pending</span></td>
+                                    <td><button class="icon-btn"><i class="fa-solid fa-ellipsis"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>#TRX-8470</td>
+                                    <td>
+                                        <div class="table-user">
+                                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="User" class="avatar-sm">
+                                            <span>Emily Chen</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-muted">Oct 23, 2026</td>
+                                    <td class="font-medium">$89.50</td>
+                                    <td><span class="status-badge success">Completed</span></td>
+                                    <td><button class="icon-btn"><i class="fa-solid fa-ellipsis"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>#TRX-8469</td>
+                                    <td>
+                                        <div class="table-user">
+                                            <div class="avatar-sm bg-danger-light text-danger">MR</div>
+                                            <span>Michael Ross</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-muted">Oct 23, 2026</td>
+                                    <td class="font-medium">$499.00</td>
+                                    <td><span class="status-badge failed">Failed</span></td>
+                                    <td><button class="icon-btn"><i class="fa-solid fa-ellipsis"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

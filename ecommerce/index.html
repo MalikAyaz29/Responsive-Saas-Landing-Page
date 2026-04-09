@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Pro | Premium Wireless Headphones</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">AURA<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specifications</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="cart-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <div class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sticky Add to Cart Bar -->
+    <div class="sticky-cart-bar" id="shop-bar">
+        <div class="container sticky-container">
+            <div class="product-mini-info">
+                <h4>Aura Pro Wireless</h4>
+                <div class="stars"><i class="fa-solid fa-star"></i> 4.9 (2k+ Reviews)</div>
+            </div>
+            <div class="sticky-actions">
+                <span class="price">$349.00</span>
+                <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="subtitle">NEW ARRIVAL</div>
+                <h1>Hear the <span class="text-accent">unheard.</span></h1>
+                <p>Experience studio-quality sound with industry-leading active noise cancellation. The Aura Pro delivers 40 hours of pure, uninterrupted bliss.</p>
+                
+                <div class="product-options">
+                    <p class="option-title">Select Color: <span id="color-name">Matte Black</span></p>
+                    <div class="color-selectors">
+                        <button class="color-btn active" data-color="Matte Black" style="background-color: #1a1a1a;"></button>
+                        <button class="color-btn" data-color="Lunar Grey" style="background-color: #d1d5db;"></button>
+                        <button class="color-btn" data-color="Rose Gold" style="background-color: #fbd38d;"></button>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large add-to-cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i> Add to Cart - $349
+                    </button>
+                </div>
+                
+                <div class="shipping-info">
+                    <i class="fa-solid fa-truck-fast"></i> Free express shipping worldwide
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1200">
+                <div class="circle-blob"></div>
+                <!-- Using a high quality unsplash image for premium feel -->
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000&auto=format&fit=crop" alt="Premium Headphones" class="main-product-img">
+                <div class="floating-badge badge-1" data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fa-solid fa-music"></i> Spatial Audio
+                </div>
+                <div class="floating-badge badge-2" data-aos="zoom-in" data-aos-delay="800">
+                    <i class="fa-solid fa-battery-full"></i> 40h Battery
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Gallery -->
+    <section id="features" class="features section-padding">
+        <div class="container">
+            <!-- Feature 1 -->
+            <div class="feature-row">
+                <div class="feature-img-box" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop" alt="Noise Cancellation">
+                </div>
+                <div class="feature-text-box" data-aos="fade-left">
+                    <h2>Silence the world.</h2>
+                    <p>Our proprietary Dynamic Noise Alleviation (DNA) algorithm listens to your surroundings 10,000 times per second to neutralize background noise completely.</p>
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-check"></i> Blocks up to 98% of ambient noise</li>
+                        <li><i class="fa-solid fa-check"></i> Transparency mode for situational awareness</li>
+                        <li><i class="fa-solid fa-check"></i> Adaptive EQ adjusts to your ear shape</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-row reverse">
+                <div class="feature-img-box" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop" alt="Comfort">
+                </div>
+                <div class="feature-text-box" data-aos="fade-right">
+                    <h2>Engineered for comfort.</h2>
+                    <p>Memory foam earcups wrap gently around your ears, while the titanium alloy headband provides the perfect clamp force. You'll forget you're wearing them.</p>
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-check"></i> Breathable vegan acoustic leather</li>
+                        <li><i class="fa-solid fa-check"></i> Ultra-lightweight 240g chassis</li>
+                        <li><i class="fa-solid fa-check"></i> Swivel folding mechanism for travel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Specs -->
+    <section id="specs" class="specs section-padding bg-darker">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <h2>Technical Specifications</h2>
+                <p>No compromises. Just pure engineering brilliance.</p>
+            </div>
+            
+            <div class="specs-grid">
+                <div class="spec-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <h3>Audio Performance</h3>
+                    <p>40mm custom beryllium drivers. Frequency response 4Hz to 40kHz.</p>
+                </div>
+                <div class="spec-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-brands fa-bluetooth-b"></i>
+                    <h3>Connectivity</h3>
+                    <p>Bluetooth 5.3 with multipoint. aptX Adaptive, LDAC, and AAC codec support.</p>
+                </div>
+                <div class="spec-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Battery Life</h3>
+                    <p>Up to 40 hours with ANC on. Fast charge: 10 mins gives 5 hours playback.</p>
+                </div>
+                <div class="spec-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                    <h3>Microphones</h3>
+                    <p>6-microphone array with beamforming technology for crystal clear calls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <div class="cta-overlay"></div>
+        <div class="container text-center cta-content" data-aos="fade-up">
+            <h2>Ready to upgrade your sound?</h2>
+            <p>Join over 50,000 audiophiles who have made the switch to Aura.</p>
+            <button class="btn btn-primary btn-large add-to-cart-btn">Buy Now - $349.00</button>
+            <p class="mt-2 guarantee"><i class="fa-solid fa-shield-halved"></i> 30-Day Money Back Guarantee</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="brand-col">
+                <a href="#" class="logo">AURA<span>.</span></a>
+                <p>Defining the future of personal audio. Engineered in Stockholm, Sweden.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="links-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#">Aura Pro</a></li>
+                    <li><a href="#">Aura Lite</a></li>
+                    <li><a href="#">Aura Buds</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="links-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Product Manuals</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="newsletter-col">
+                <h4>Stay in the loop</h4>
+                <p>Sign up to receive news on product drops and exclusive offers.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Aura Audio Inc. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Toast Notification -->
+    <div class="toast-notification" id="cart-toast">
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-check text-accent"></i>
+            <div>
+                <h4>Added to Cart</h4>
+                <p>Aura Pro Wireless (<span id="toast-color">Matte Black</span>)</p>
+            </div>
+        </div>
+        <button class="toast-close" id="toast-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
