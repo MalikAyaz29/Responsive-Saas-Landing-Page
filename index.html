@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchKit | The All-in-One Startup Toolkit</title>
+    <meta name="description" content="LaunchKit gives you everything you need to build, launch, and scale your startup faster.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-rocket text-gradient"></i> LaunchKit
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-outline">Log In</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="badge">🚀 v2.0 Now Live!</div>
+                <h1>Scale your startup <br> <span class="text-gradient">faster than ever.</span></h1>
+                <p>LaunchKit gives you the ultimate all-in-one toolkit to build, launch, and monetize your SaaS product in days, not months.</p>
+                <div class="hero-cta">
+                    <a href="#pricing" class="btn btn-primary btn-large">Start 14-Day Free Trial</a>
+                    <div class="trusted-text"><i class="fa-solid fa-check-circle"></i> No credit card required</div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="sidebar">
+                            <div class="sidebar-item active"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                        </div>
+                        <div class="main-content">
+                            <div class="chart-area"></div>
+                            <div class="cards-area">
+                                <div class="mini-card"></div>
+                                <div class="mini-card"></div>
+                                <div class="mini-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="section-subtitle">TRUSTED BY 10,000+ FORWARD-THINKING TEAMS</p>
+            <div class="logo-grid" data-aos="fade-up">
+                <div class="company-logo"><i class="fa-brands fa-stripe"></i> <span class="logo-text">Stripe</span></div>
+                <div class="company-logo"><i class="fa-brands fa-aws"></i> <span class="logo-text">AWS</span></div>
+                <div class="company-logo"><i class="fa-brands fa-slack"></i> <span class="logo-text">Slack</span></div>
+                <div class="company-logo"><i class="fa-brands fa-figma"></i> <span class="logo-text">Figma</span></div>
+                <div class="company-logo"><i class="fa-brands fa-github"></i> <span class="logo-text">GitHub</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Everything you need. <br><span class="text-gradient">Nothing you don't.</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Lightning Fast Setup</h3>
+                    <p>Deploy your full stack infrastructure in under 5 minutes with our automated CLI tools.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Built-in Analytics</h3>
+                    <p>Track user behavior, retention, and MRR out of the box without third-party tools.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-grade encryption, role-based access control, and built-in compliance for peace of mind.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <h3>Payments Ready</h3>
+                    <p>Integrated Stripe billing schema with ready-to-use pricing tables and customer portals.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                    <h3>Customizable UI</h3>
+                    <p>100+ beautifully designed, accessible components ready to be branded to your style.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Direct communication channels to our core engineering team whenever you need help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works section-padding">
+        <div class="container container-narrow">
+            <div class="section-header" data-aos="fade-up">
+                <h2>From idea to <span class="text-gradient">launch in 3 steps</span></h2>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Connect your tools</h3>
+                        <p>Link your Git repository and authentication providers. LaunchKit automatically syncs with your existing workflows seamlessly.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-left">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Select components</h3>
+                        <p>Visually drag and drop the modules you need: Auth, Database, Payments, Analytics, and Emails. We write the boilerplate.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Deploy to global edge</h3>
+                        <p>Hit deploy and watch your application go live globally on edge networks instantly. Scaling is handled automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Simple, transparent <span class="text-gradient">pricing</span></h2>
+                <p>No hidden fees. Cancel anytime.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Basic Tier -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tier-name">Starter</div>
+                    <div class="price"><span>$</span>29<span>/mo</span></div>
+                    <p class="tier-desc">Perfect for side projects and indie hackers.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Up to 1,000 MAUs</li>
+                        <li><i class="fa-solid fa-check"></i> 5 Database Tables</li>
+                        <li><i class="fa-solid fa-check"></i> Community Support</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Custom Domains</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-full">Get Started</a>
+                </div>
+                
+                <!-- Popular Tier -->
+                <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="tier-name">Pro</div>
+                    <div class="price"><span>$</span>79<span>/mo</span></div>
+                    <p class="tier-desc">For growing startups and established teams.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Up to 10,000 MAUs</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited Database Tables</li>
+                        <li><i class="fa-solid fa-check"></i> Priority Email Support</li>
+                        <li><i class="fa-solid fa-check"></i> Custom Domains</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-full">Start Free Trial</a>
+                </div>
+
+                <!-- Enterprise Tier -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tier-name">Enterprise</div>
+                    <div class="price"><span>$</span>299<span>/mo</span></div>
+                    <p class="tier-desc">For large scale applications with high traffic.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Unlimited MAUs</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated Infrastructure</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 Phone Support</li>
+                        <li><i class="fa-solid fa-check"></i> Custom SLAs</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Loved by <span class="text-gradient">Founders</span></h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"LaunchKit literally saved us 3 months of development time. We were able to validate our idea and get paying customers in week one."</p>
+                    <div class="author">
+                        <div class="author-avatar" style="background-color: #7c3aed;">SA</div>
+                        <div class="author-info">
+                            <h4>Sarah Anderson</h4>
+                            <span>Founder @ TechFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"The best boilerplates and components I've ever used. The code quality is incredibly high and highly customizable."</p>
+                    <div class="author">
+                        <div class="author-avatar" style="background-color: #06b6d4;">JD</div>
+                        <div class="author-info">
+                            <h4>James Davis</h4>
+                            <span>CTO @ Nexus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"If you're a solo founder, this is a no-brainer. Authentication, billing, and UI are handled for you. Highly recommended."</p>
+                    <div class="author">
+                        <div class="author-avatar" style="background-color: #10b981;">MK</div>
+                        <div class="author-info">
+                            <h4>Maria Kowalski</h4>
+                            <span>Indie Hacker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding">
+        <div class="container container-narrow">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+            <div class="accordion" data-aos="fade-up" data-aos-delay="100">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do I need coding experience?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Basic knowledge of HTML/CSS/JS is recommended, but our visual editor and extensive documentation make it accessible even for beginners. We handle complex backend logic for you.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can I export my code later?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, absolutely! You own your code 100%. If you ever decide to move away from LaunchKit, you can export your entire project as standard React/Node.js files.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How does the billing integration work?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We provide a one-click integration with Stripe. Simply paste your API keys securely, and we automatically generate pricing tables, customer portals, and handle webhooks.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is there a refund policy?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, we offer a 14-day money-back guarantee. If you're not satisfied, simply contact our support team and we'll issue a full refund, no questions asked.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta section-padding">
+        <div class="container">
+            <div class="cta-box" data-aos="zoom-in">
+                <h2>Ready to <span class="text-gradient">launch your startup?</span></h2>
+                <p>Join over 10,000 founders building the future with LaunchKit.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary btn-large">Get Started Now</a>
+                    <a href="#" class="btn btn-outline btn-large bg-dark">Read Documentation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-rocket text-gradient"></i> LaunchKit
+                    </a>
+                    <p>The premier all-in-one startup toolkit designed for speed, scale, and simplicity.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LaunchKit Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
